@@ -1,1 +1,1 @@
-# how
+Basic Github commands
