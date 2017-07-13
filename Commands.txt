@@ -1,1 +1,92 @@
 Commands for github
+
+
+Normal Commands:
+
+cd ~     //move to home directory
+cd ..     //moving one folder up
+ls     //show files and folders in the current directory
+ls -la     //show files and folders in the current directory + hidden
+
+Configuration commands:
+
+git config --global user.name 'username'   //configuring username in git
+git config --global user.email 'email'     //configuring email in git
+git config --global color.ui auto 	// colorization of command line input
+git config --list     //details about the user
+git config propertyName     //property details
+git remote add origin url     //making a remote before publishing to GitHub
+
+
+Create Repositories:
+
+git init     	//initializing a folder into a git repository
+git clone remote_location clone_name  //cloning of url in specified folder
+rm -rf .git     //reverse of git init
+
+
+Make Changes:
+
+git add .     //adding all the files to the staging area
+git add 'fileName'     //adding files to the staging area
+git add -A		//adding all the files to the staging area.
+git status     //shows the files or folders that have been modified
+git commit -m 'commitMessage'     //commiting the changes with a message
+git commit -am 'commitMessage'     //directly commiting to the repository; NO SA
+git log     //shows the commit details
+git rm 'fileName'     //removing a file
+git mv 'fileName1' 'fileName2' //renaming of the file
+git checkout -- 'fileName'  //undo the changes in a file, if modified
+git reset HEAD 'fileName'   //unstaging a file
+git checkout SHA(first 7 digits of commit no) -- 'fileName'     //going back to 							a particular commit time
+git remote add origin url     //making a remote before publishing to GitHub
+git remote -v    //shows the remote name(s)
+
+
+Basic Commands for pull and push:
+
+git fetch: Fetches work from the remote into the local copy.
+git merge origin/master: Merges origin/master into your local branch.
+git push origin <branch_name>: Pushes a local branch to the origin remote.
+git pull origin <branch_name>: Pull resource from the repo.
+
+Git Branching:
+
+git branch 	// list the present working branch
+git branch branch_name 		// creation of new branch
+git branch -d branch_name	//deletion of the branch
+git merge branch_name		//merging of branch with master/branch
+git checkout branch_name	//Moving to the specified branch
+
+
+Workflow:
+
+Configuration
+pull
+add
+commit
+push
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
